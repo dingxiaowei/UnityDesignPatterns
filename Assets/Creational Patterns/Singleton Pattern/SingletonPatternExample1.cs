@@ -1,7 +1,7 @@
 ﻿//-------------------------------------------------------------------------------------
 // Title: 单例模式
 // Author: Aladdin
-// Tips: 演示一个最基本的饿汉式单例模式
+// Tips: 演示最基本的饿汉式单例模式
 // More: http://dingxiaowei.cn/tags/设计模式/
 //-------------------------------------------------------------------------------------
 
@@ -53,6 +53,22 @@ public class Singleton2
     public static Singleton2 GetInstance()
     {
         return instance;
+    }
+}
+
+//饿汉式
+public class Singleton3
+{
+    private Singleton3() { }
+    private static Singleton3 instance = null;
+    public static Singleton3 Instance
+    {
+        get
+        {
+            if (instance == null)
+                instance = new Singleton3();
+            return instance;
+        }
     }
 }
 
