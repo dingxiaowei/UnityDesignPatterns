@@ -10,6 +10,7 @@ Unity2019.3
 * [UML入门](http://dingxiaowei.cn/2017/05/12/)
 * 创建型设计模式
 	* [单例模式](http://dingxiaowei.cn/2017/05/13/)
+	* [工厂模式](http://dingxiaowei.cn/2017/05/14/)
 
 ## 更多教程
-http://dingxiaowei.cn
+http://dingxiaowei.cn/tags/设计模式/
