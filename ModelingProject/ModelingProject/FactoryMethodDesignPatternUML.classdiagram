@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a8b612ed-5b44-4c42-b988-dbd094144481" name="AbsFactoryDesignPatternUML" linkedPackageId="001613b0-c089-40b5-95aa-de534f2c020c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="acfea45f-efd2-4f66-a41c-c51fefd2847d">
+      <profileInstance Id="478adf20-8aa0-4370-83db-9e253785a983" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0b0c4832-0bdc-4150-b93e-4d35cccf57f8">
+      <profileInstance Id="2c1358f8-9468-45b4-ae5a-404d9d01383c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="907f8147-6bd9-46df-9f91-deff2f66410d" name="WeaponFactoryBase" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e5ad9ed2-7012-4125-9eec-4ad8e850cb81" />
+        <ownedOperationsInternal>
+          <operation Id="e74422cf-ede6-4a06-b8b5-67182a130c85" name="CreateWeapon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="48f96d5b-33a5-449b-8e2a-e6ca72942782" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5c18b965-0116-4b6c-93a2-dd2f3a81128a" direction="Return" isUnique="false">
+                  <elementDefinition Id="3734fd8a-e928-4106-8afe-6c90ee5871da" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c7a173a7-676c-424e-b830-a5e19b678ebb" LastKnownName="Weapon" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="080d925f-e305-4e19-9ba3-77b55f9222ef" name="name" direction="In" isUnique="false">
+                  <elementDefinition Id="bec8702c-c2c0-429e-9a8c-d7dfb91a7b17" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6f5325f6-ed10-4582-8c68-7fe63e69a6bf" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c7a173a7-676c-424e-b830-a5e19b678ebb" name="Weapon" isAbstract="false" isLeaf="false" cachedFullName="Weapon">
+        <elementDefinition Id="05fa7f88-c244-4b8d-a106-94074b558a77" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8076c814-84d8-4f1a-9f81-4bd279cd5d92" name="RifleFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="30b27b8e-4743-44aa-942b-0e3458a9f32a" />
+        <suppliersInternal>
+          <dependency Id="d9539085-aab8-4c47-995a-be17045d1bac">
+            <classMoniker Id="d8dc1f25-17f2-46e7-9a3d-3d42b3785230" LastKnownName="Rifle" />
+            <elementDefinition Id="2a1dbb3f-d8a5-4627-8ade-bb15ddbf07a9" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="5f81012b-6c27-44bb-bd86-989d7a569da7" isSubstitutable="false">
+            <classMoniker Id="907f8147-6bd9-46df-9f91-deff2f66410d" LastKnownName="WeaponFactoryBase" />
+            <elementDefinition Id="72acdd81-9188-4af5-95ff-0e5a6beb2f8a" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="37d1b6c8-444e-41cb-a4d5-9257a2a7bb88" name="CreateWeapon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="341315d2-5e13-4683-a483-dfa836595684" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="363dc7af-89fd-4a1f-8ca2-a974828c3250" direction="Return" isUnique="false">
+                  <elementDefinition Id="bc7fd91e-1d9b-42e1-9e59-297e9ff4cd0d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c7a173a7-676c-424e-b830-a5e19b678ebb" LastKnownName="Weapon" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3f8dbf72-a8d0-4a7b-936e-c0fb6ba6ae76" name="name" direction="In" isUnique="false">
+                  <elementDefinition Id="25ded833-8ede-4e5b-bd15-4ea2d04a16fd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6f5325f6-ed10-4582-8c68-7fe63e69a6bf" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="901a0bb1-5e39-46b3-97aa-5c4e42d429ef" name="PistolFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2474ba09-e55a-4506-8e6c-5289db577856" />
+        <suppliersInternal>
+          <dependency Id="3588071f-2b90-4c80-818f-62c49316440a">
+            <classMoniker Id="b269e5a3-cb5a-42d5-aa2c-86485ccaa8be" LastKnownName="Pistol" />
+            <elementDefinition Id="d034e263-6fa8-40e8-a08e-65dcff8e9376" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="bc88a659-e893-4b8f-99bf-47573c5c0603" isSubstitutable="false">
+            <classMoniker Id="907f8147-6bd9-46df-9f91-deff2f66410d" LastKnownName="WeaponFactoryBase" />
+            <elementDefinition Id="80480cea-e531-488b-81cf-870ac3d4977a" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="df8942b0-9a3b-466e-bfb5-2d9d579e6a3f" name="CreateWeapon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="84db2e3e-5ebd-41ed-83be-27f15a5d199c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="31d8c57b-e711-4779-9a57-9b4d8620b764" name="name" direction="In" isUnique="false">
+                  <elementDefinition Id="1486a236-36c4-4f80-82e9-44fd9cd94272" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6f5325f6-ed10-4582-8c68-7fe63e69a6bf" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="facd7b52-3b6c-4ba8-a970-ef4d8085f555" direction="Return" isUnique="false">
+                  <elementDefinition Id="a75f37f2-be54-4450-a2fa-4255e35a2235" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c7a173a7-676c-424e-b830-a5e19b678ebb" LastKnownName="Weapon" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="6f5325f6-ed10-4582-8c68-7fe63e69a6bf" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="93f63aee-d4af-4168-97ec-cd0722503a31" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="5cc01ab0-8dab-4472-becc-b5bef5f8d587" name="Program">
+        <elementDefinition Id="a2f9bfbf-056c-4ec3-a0b3-7d67ec44d49a" />
+        <suppliersInternal>
+          <dependency Id="23c0a7b8-a068-4dd1-ad65-b1776ac2cb04">
+            <classMoniker Id="907f8147-6bd9-46df-9f91-deff2f66410d" LastKnownName="WeaponFactoryBase" />
+            <elementDefinition Id="102d5175-c325-4e85-8df2-86744d75451d" />
+          </dependency>
+        </suppliersInternal>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e26769ce-ad58-4478-9a98-d61312525d40" name="Weapon" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="17a80029-cf5d-430b-8cd8-7e148ef37161" />
+        <ownedAttributesInternal>
+          <property Id="58eee45a-8a5d-4dc7-bc88-51466fb9a7f9" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="18358f20-7990-42f0-a038-d36225e64b0f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6f5325f6-ed10-4582-8c68-7fe63e69a6bf" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d8dc1f25-17f2-46e7-9a3d-3d42b3785230" name="Rifle" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="55f5f34c-79e8-4130-bde1-08f454ae1299" />
+        <generalsInternal>
+          <generalization Id="8d8fa8e6-47a5-4f8f-8e26-3eb43deb5ea6" isSubstitutable="false">
+            <classMoniker Id="e26769ce-ad58-4478-9a98-d61312525d40" LastKnownName="Weapon" />
+            <elementDefinition Id="7585d63b-afdf-425d-81fc-6e966f4278ea" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="37910bb7-e284-4fec-920b-df083057b0ad" name="Rifle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c4286c4f-0358-4c87-96f7-2ec88fa5cf2f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="111232fa-a914-4242-a6b9-246dc493e092" name="name" direction="In" isUnique="false">
+                  <elementDefinition Id="b500e456-f271-4d5d-9ea7-9729d0fc1c2a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6f5325f6-ed10-4582-8c68-7fe63e69a6bf" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b269e5a3-cb5a-42d5-aa2c-86485ccaa8be" name="Pistol" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="12e148ed-b411-470f-b7ab-e4ddf8c7304c" />
+        <generalsInternal>
+          <generalization Id="a68d19ba-8726-4f15-ba4c-012e255dcf8a" isSubstitutable="false">
+            <classMoniker Id="e26769ce-ad58-4478-9a98-d61312525d40" LastKnownName="Weapon" />
+            <elementDefinition Id="c9aae102-b27a-4fb7-867f-a36c4433bca8" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="0edf97eb-2746-4d1d-82d5-80e65f9021f2" name="Pistol" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d4f77286-d8f6-45d8-82ec-bf9887bca6e5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="88a4b024-65c5-48a7-8fa1-dafeab457c2e" name="name" direction="In" isUnique="false">
+                  <elementDefinition Id="17b32ae0-2b56-4370-83a8-b32b420584ba" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6f5325f6-ed10-4582-8c68-7fe63e69a6bf" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="001613b0-c089-40b5-95aa-de534f2c020c" name="ModelingProject">
+    <elementDefinition Id="c6e0487e-98d0-4904-b090-ba82f19c814a" />
+  </package>
+</logicalClassDesignerModel>
