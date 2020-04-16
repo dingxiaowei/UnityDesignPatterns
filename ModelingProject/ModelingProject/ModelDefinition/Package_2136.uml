@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
-  Id="35acbd98-3ae8-4d6f-9287-97d5c4f4ee31"
-  name="Program" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  Id="e2a7a1cd-5bd2-4df5-9d14-b028af7e429e"
+  name="Program2" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <suppliersInternal>
     <dependency
-      Id="24dff356-a406-4c45-a099-330a8556daab">
+      Id="4ab6aa00-a89d-4555-b796-9fb4154ee233">
       <classMoniker
-        Id="ea54bc22-8355-4541-96b2-bd235b12078b"
+        Id="9ea4dad7-a15b-482d-8526-af82441b2872"
         LastKnownName="WeaponFactory"
-        LastKnownLocation="ModelingProject1.uml" />
+        LastKnownLocation="ModelingProject.uml" />
     </dependency>
   </suppliersInternal>
 </package>

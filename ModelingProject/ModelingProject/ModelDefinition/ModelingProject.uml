@@ -1,8 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="c6e0487e-98d0-4904-b090-ba82f19c814a"
   name="ModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="57f3e758-a82a-4c05-a349-885f8f537e07">
+      <body>Abstract类</body>
+      <annotatedElements>
+        <classMoniker
+          Id="f61638d4-811c-4cf4-84bb-d5e8a4005faa"
+          LastKnownName="Weapon2"
+          LastKnownLocation="ModelingProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="7bae7d56-9f9d-4071-9228-090100299950">
+      <body>客户端通过武器工厂创建对应类型的武器</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -1003,6 +1019,238 @@
           </operation>
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="25544320-b059-4a0c-9972-9ef8ccae8188"
+        name="WeaponType" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c73d8470-1d81-4fec-bb56-98ffd54b833d"
+        name="ModelingProject1::Weapon" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f61638d4-811c-4cf4-84bb-d5e8a4005faa"
+        name="Weapon2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="4c8a978f-69f2-40c0-901a-73544c6d7bd1"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="93f63aee-d4af-4168-97ec-cd0722503a31"
+                LastKnownName="string"
+                LastKnownLocation="ModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="be77c9a8-88ab-4147-86cd-c227862d6e89"
+        name="Pistol2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="9a84256d-2d06-4996-a36f-f59be3118545"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f61638d4-811c-4cf4-84bb-d5e8a4005faa"
+              LastKnownName="Weapon2"
+              LastKnownLocation="ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="03bfe875-7a09-443e-9825-4a1350bd85e4"
+            name="Piistol"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bc35ec02-1c7f-4f09-94ab-0ba1255f189e"
+                  name="name"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="93f63aee-d4af-4168-97ec-cd0722503a31"
+                      LastKnownName="string"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="339ac4e9-0f13-4e35-aee1-7788d762ee11"
+        name="Rifle2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f4f5efc8-4d74-4891-b62d-9a4d6c936723"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f61638d4-811c-4cf4-84bb-d5e8a4005faa"
+              LastKnownName="Weapon2"
+              LastKnownLocation="ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1accce5e-d8c1-4a9a-a047-8c2cb9415be6"
+            name="Rifle"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f7e84c9-dd68-43f7-a2b1-8fb975ff0b5e"
+                  name="name"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="93f63aee-d4af-4168-97ec-cd0722503a31"
+                      LastKnownName="string"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9ea4dad7-a15b-482d-8526-af82441b2872"
+        name="WeaponFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="05ffb317-cb52-4319-aae5-b5d7f3380802">
+            <classMoniker
+              Id="f61638d4-811c-4cf4-84bb-d5e8a4005faa"
+              LastKnownName="Weapon2"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+          <dependency
+            Id="06b83e84-c976-4d85-8db8-ce87c228d8c7">
+            <enumerationMoniker
+              Id="d212ee5a-f0e3-43a3-88aa-290681f648c8"
+              LastKnownName="WeaponType"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="873203ae-5483-482c-8d7a-09a618e48728"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e484b1c5-be23-4e42-8ee4-212ebb6c0bbe"
+                  name="type"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="25544320-b059-4a0c-9972-9ef8ccae8188"
+                      LastKnownName="WeaponType"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3eef9891-e7ea-403d-a74c-88f16b1290c4"
+                  name="name"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="93f63aee-d4af-4168-97ec-cd0722503a31"
+                      LastKnownName="string"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5fd42965-97c2-41c1-ab6b-f5f485b5c0b7"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c73d8470-1d81-4fec-bb56-98ffd54b833d"
+                      LastKnownName="ModelingProject1::Weapon"
+                      LastKnownLocation="ModelingProject.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="d212ee5a-f0e3-43a3-88aa-290681f648c8"
+        name="WeaponType"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="9aeb06cd-6c8b-4767-ac1f-c970a703831a"
+            name="EPistol" />
+          <enumerationLiteral
+            Id="2b330380-cf2b-4630-b3c0-951b9cc2b837"
+            name="ERifle" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e2a7a1cd-5bd2-4df5-9d14-b028af7e429e"
+        LastKnownName="Program2"
+        LastKnownLocation="Package_2136.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
