@@ -11,6 +11,14 @@ Unity2019.3
 * 创建型设计模式
 	* [单例模式](http://dingxiaowei.cn/2017/05/13/)
 	* [工厂模式](http://dingxiaowei.cn/2017/05/14/)
+	简单工厂：
+	![简单工厂](ModelingProject/Pictures/1.png)
+    工厂方法：
+    ![工厂方法](ModelingProject/Pictures/2.png)
+    抽象工厂：
+    ![抽象工厂](ModelingProject/Pictures/3.png)
+    * [原型模式](http://dingxiaowei.cn/2017/05/15/)
+    * [建造者模式](http://dingxiaowei.cn/2017/05/16/)
 
 ## 更多教程
 http://dingxiaowei.cn/tags/设计模式/
