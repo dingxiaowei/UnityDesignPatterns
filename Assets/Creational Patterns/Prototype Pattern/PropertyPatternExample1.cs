@@ -56,13 +56,30 @@ public class Person : ICloneable
 
 
 //代码优化
-
 [Serializable]
 public class Person1 : BaseClone<Person1>
 {
     public int Age { get; set; }
     public string Name { get; set; }
     public Job Job { get; set; }
+}
+
+//最常见的深拷贝
+public class Character
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+
+    public bool IsAvatar { get; set; }
+
+    public Character DeepClone()
+    {
+        Character character = new Character();
+        character.Id = this.Id;
+        character.Name = this.Name;
+        character.IsAvatar = this.IsAvatar;
+        return character;
+    }
 }
 
 //通用深拷贝基类
@@ -78,11 +95,21 @@ public class BaseClone<T> : ICloneable where T : new()
     //深拷贝
     public virtual T DeepClone()
     {
-        MemoryStream memoryStream = new MemoryStream();
-        BinaryFormatter formatter = new BinaryFormatter();
-        formatter.Serialize(memoryStream, this);
-        memoryStream.Position = 0;
-        return (T)formatter.Deserialize(memoryStream);
+        try
+        {
+            using (Stream memoryStream = new MemoryStream())
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                formatter.Serialize(memoryStream, this);
+                memoryStream.Position = 0;
+                return (T)formatter.Deserialize(memoryStream);
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("克隆异常:" + ex.ToString());
+        }
+        return default(T);
     }
 
     public object Clone()
