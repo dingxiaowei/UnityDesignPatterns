@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="6398c507-dbec-4a3b-8a7b-12b6d103aa75" name="PropertyDesignPatternUML" linkedPackageId="1cc662bb-e507-4cd2-9d30-b9d069d43e5a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="30683dab-b55b-41f3-bcec-1dae10a60494">
+      <profileInstance Id="164cbab2-44eb-44e2-b0e6-86d7b56ab76a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a6b68d7b-385d-45fc-a776-03285d91bc0d">
+      <profileInstance Id="8a0b4a94-a4c8-4366-8630-82610c0e57a1" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="69b275c1-4f5f-4079-a565-4c1ce4a9baff" name="Job" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7a34787a-c6e4-4837-ba38-1fec8f42c15f" />
+        <ownedAttributesInternal>
+          <property Id="2a96c5b8-c4a0-4eb9-8f8a-fa60774cd009" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8d6a6ae4-cdea-4e02-8bed-90d8662fdd59" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6a1646ee-7042-44a3-81cb-61e1cece2f76" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="1af3822c-c7bf-43ed-842c-6a6ce2230cb8" name="JobName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bc39578b-be33-4e7b-b44c-435949191e47" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6be4dcec-dba1-4d4b-b627-749566dcc4f5" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="02172830-b538-4178-b722-0be85c0d72ee" name="ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8befe0f3-c5ac-4b8b-b923-a751506329d3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="34046c93-ab39-45af-9efe-90902eabc6d0" direction="Return" isUnique="false">
+                  <elementDefinition Id="dead4e38-5e44-42c7-954e-c027e89b56c4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6be4dcec-dba1-4d4b-b627-749566dcc4f5" LastKnownName="string" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="6be4dcec-dba1-4d4b-b627-749566dcc4f5" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="93f63aee-d4af-4168-97ec-cd0722503a31" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6a1646ee-7042-44a3-81cb-61e1cece2f76" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="4f893f7f-17da-4206-8a30-6f2a94b0d2bc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cbceec92-1ea2-4469-95d0-40bb1538b3af" name="Person" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7c323ef2-750d-4ac0-a916-1b55032a5ced" />
+        <suppliersInternal>
+          <dependency Id="992af5fe-7e37-4413-ac8b-b6feb0d26b43">
+            <classMoniker Id="69b275c1-4f5f-4079-a565-4c1ce4a9baff" LastKnownName="Job" />
+            <elementDefinition Id="e115cc0a-9b8c-4a9e-953a-98dcf9244384" />
+          </dependency>
+          <interfaceRealization Id="237ed375-ff41-411d-8d1c-b6cfceb3ca2d">
+            <interfaceMoniker Id="4dd06192-24ab-4fb7-8a25-fe8be4f1f463" LastKnownName="ICloneable" />
+            <elementDefinition Id="cd58856d-f995-4236-ada0-f1e401d626c0" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="082f30fb-e61a-43ce-abcb-1c3c8fd687a0" name="Age" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9b14c01f-d675-4c11-b039-6cb28193ba1f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6a1646ee-7042-44a3-81cb-61e1cece2f76" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="73da8546-2144-4d29-9d94-79447fdbfc9f" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="936fb642-7604-4c37-83ea-78411079dbe2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6be4dcec-dba1-4d4b-b627-749566dcc4f5" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="47d85406-2d3f-4695-abc6-1673ffe12aa6" name="Job" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d5282e1c-10ee-4ba6-b3df-bcf9ed5eadfe" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="13e86298-a35e-411c-9dd0-56e9970966b7" LastKnownName="Job" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7a79eeab-3011-4a52-9ea0-de7d70846299" name="DeepClone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4e5dae2b-3c82-4775-9cc5-68de7c14ce0c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6943cf07-072e-495c-8d99-859388041a72" direction="Return" isUnique="false">
+                  <elementDefinition Id="bd655ddd-bf0d-4a30-97ce-9279410e4ae9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d7f48abd-c895-4c31-b92a-b315e899fe4b" LastKnownName="Person" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cbbd38b6-51fe-48a9-ab8c-d62c7f3cbde5" name="ShallowClone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="87d6d104-80be-43ca-8420-31f5cb4663d7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c6cfbb40-4430-489a-b838-0298b9d4b5af" direction="Return" isUnique="false">
+                  <elementDefinition Id="c8d80497-3dee-4f38-8ede-861e139ea307" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d7f48abd-c895-4c31-b92a-b315e899fe4b" LastKnownName="Person" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c3de21d5-7025-42a9-9cd2-007b4f69d9e5" name="Clone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e0409674-cc33-4277-817c-067bd66748e6" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="13e86298-a35e-411c-9dd0-56e9970966b7" name="Job" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::Job">
+        <elementDefinition Id="7a34787a-c6e4-4837-ba38-1fec8f42c15f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d7f48abd-c895-4c31-b92a-b315e899fe4b" name="Person" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject::Person">
+        <elementDefinition Id="7c323ef2-750d-4ac0-a916-1b55032a5ced" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="4dd06192-24ab-4fb7-8a25-fe8be4f1f463" name="ICloneable" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8528868c-74a9-47f1-a35d-e3b9818ddfe8" />
+        <ownedOperations>
+          <operation Id="3ebef998-d586-4b57-8b21-c7d743dccf63" name="Clone" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="89bc0c80-ffba-4362-8457-0eff98888470" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="1e1851d6-1127-4d96-9ca6-6c4ed1d3a5de" name="Client">
+        <elementDefinition Id="48017905-98f8-40b0-beda-24c9abc6cfa2" />
+        <suppliersInternal>
+          <dependency Id="e6ccf257-9378-42f3-a086-0cf8fbf796b8">
+            <classMoniker Id="cbceec92-1ea2-4469-95d0-40bb1538b3af" LastKnownName="Person" />
+            <elementDefinition Id="a7bbb01a-7b27-41b5-af9a-2a9fdc243141" />
+          </dependency>
+        </suppliersInternal>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="1cc662bb-e507-4cd2-9d30-b9d069d43e5a" name="ModelingProject">
+    <elementDefinition Id="c6e0487e-98d0-4904-b090-ba82f19c814a" />
+  </package>
+</logicalClassDesignerModel>
