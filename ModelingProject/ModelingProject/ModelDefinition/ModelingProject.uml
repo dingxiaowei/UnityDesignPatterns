@@ -18,6 +18,14 @@
       Id="7bae7d56-9f9d-4071-9228-090100299950">
       <body>客户端通过武器工厂创建对应类型的武器</body>
     </comment>
+    <comment
+      Id="4d7f3c1e-96d5-4e35-bf66-4cbe47fb2bb6">
+      <body>克隆接口</body>
+    </comment>
+    <comment
+      Id="1dbccd03-a662-4e7e-a661-c76c3e3b4b9c">
+      <body>原型类，实现一个克隆自己的操作</body>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances

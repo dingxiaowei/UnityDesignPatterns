@@ -1,5 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="6398c507-dbec-4a3b-8a7b-12b6d103aa75" name="PropertyDesignPatternUML" linkedPackageId="1cc662bb-e507-4cd2-9d30-b9d069d43e5a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="5cfb2acd-27d1-4b96-9096-93d9a06a2b9e">
+      <elementDefinition Id="4d7f3c1e-96d5-4e35-bf66-4cbe47fb2bb6" />
+      <body>克隆接口</body>
+    </comment>
+    <comment Id="07f6946b-3f1c-4948-9c1c-e75e36cb06bd">
+      <elementDefinition Id="1dbccd03-a662-4e7e-a661-c76c3e3b4b9c" />
+      <body>原型类，实现一个克隆自己的操作</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances Id="30683dab-b55b-41f3-bcec-1dae10a60494">
       <profileInstance Id="164cbab2-44eb-44e2-b0e6-86d7b56ab76a" name="StandardProfileL2">
@@ -147,6 +157,12 @@
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasPackages>
       <package Id="1e1851d6-1127-4d96-9ca6-6c4ed1d3a5de" name="Client">
+        <ownedCommentsInternal>
+          <comment Id="c046de4d-126a-4561-be03-1ccd67e97d2a">
+            <elementDefinition Id="031ee27a-24ba-4bad-8d17-b7534ce08df4" />
+            <body>让一个原型对象克隆自己，从而创建一个新的对象(属性一样)</body>
+          </comment>
+        </ownedCommentsInternal>
         <elementDefinition Id="48017905-98f8-40b0-beda-24c9abc6cfa2" />
         <suppliersInternal>
           <dependency Id="e6ccf257-9378-42f3-a086-0cf8fbf796b8">

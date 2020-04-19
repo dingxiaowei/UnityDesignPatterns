@@ -3,6 +3,12 @@
   dslVersion="1.0.0.0"
   Id="48017905-98f8-40b0-beda-24c9abc6cfa2"
   name="Client" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="031ee27a-24ba-4bad-8d17-b7534ce08df4">
+      <body>让一个原型对象克隆自己，从而创建一个新的对象(属性一样)</body>
+    </comment>
+  </ownedCommentsInternal>
   <suppliersInternal>
     <dependency
       Id="a7bbb01a-7b27-41b5-af9a-2a9fdc243141">
