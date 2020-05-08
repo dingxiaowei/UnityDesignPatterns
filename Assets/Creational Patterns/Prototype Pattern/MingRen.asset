@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9be32bc9390ab244aee43a94846a27c, type: 3}
+  m_Name: MingRen
+  m_EditorClassIdentifier: 
+  Name: "\u65CB\u6DA1\u9E23\u4EBA"
+  Desc: "\u6E38\u620F\u4E3B\u89D2\uFF0C\u516B\u4EE3\u706B\u5F71"
+  Attributes:
+    hp: 100
+    pAtk: 80
+    pDef: 50
+    mAtk: 20
+    mDef: 30
+    spd: 40
+    model: {fileID: 0}
