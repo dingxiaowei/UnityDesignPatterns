@@ -1509,6 +1509,202 @@
         LastKnownName="Client"
         LastKnownLocation="Package_2004.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f0fde971-b102-4b38-a077-21d1f185923c"
+        name="Director"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="ad3241bf-a0f7-4191-9fdd-c516595506a6"
+            isDerived="false"
+            sourceEndRoleName="Director"
+            targetEndRoleName="Builder"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5a147ee1-6a35-4d0c-abbd-f2e12f871113"
+              LastKnownName="Builder"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="33392ad0-d436-43c4-9505-08ae27898ffb"
+                  name="Director"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a7f7e1d0-13ca-47e3-978b-bbf229d709ea"
+                  name="Builder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5a147ee1-6a35-4d0c-abbd-f2e12f871113"
+        name="Builder"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="41820557-ba70-4b11-89b8-d0cba7076d12"
+            name="BuildPartA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4b1a5a64-d530-47fa-8cca-dc7bfc4e5b0b"
+            name="BuildPartB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="114b7c4c-aee3-4098-8734-62746de928e7"
+            name="BuildPartC"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="87b8f792-b2cb-45ad-946f-01a09dca979f"
+            name="GetProduct"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bf0be90e-7f51-4d24-9c9e-507c56490498"
+        name="ConcreteBuilder"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="84f2d23f-601c-4abb-b560-60b75df69044"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5a147ee1-6a35-4d0c-abbd-f2e12f871113"
+              LastKnownName="Builder"
+              LastKnownLocation="ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e2d49a57-87a1-40b7-ba4e-d31bdc3107b6"
+            name="BuildPartA"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ce2d4513-2b41-48e3-962f-4da6e46d185f"
+            name="BuildPartB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="79ce1b03-6f40-4406-95d3-aa65d2029ffe"
+            name="BuildPartC"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2df3aec2-7a58-406c-8895-f74d6689e994"
+            name="GetProduct"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7c2f996d-6408-4efc-8231-0959a7f661b5"
+        name="Product"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="59ab6e57-18c5-4484-88a6-2869662d9dd4"
+            isDerived="false"
+            sourceEndRoleName="Product"
+            targetEndRoleName="Builder"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5a147ee1-6a35-4d0c-abbd-f2e12f871113"
+              LastKnownName="Builder"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d354e22-c2a7-49e1-aeec-5a6c61346b52"
+                  name="Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="531905b8-9f1f-453e-9e8b-59b15b9c17e6"
+                  name="Builder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
