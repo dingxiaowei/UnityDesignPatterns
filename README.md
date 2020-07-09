@@ -19,6 +19,8 @@ Unity2019.3
     ![抽象工厂](ModelingProject/Pictures/3.png)
     * [原型模式](http://dingxiaowei.cn/2017/05/15/)
     * [建造者模式](http://dingxiaowei.cn/2017/05/16/)
+* 结构型设计模式
+	* [代理模式](http://dingxiaowei.cn/2017/05/17/)
 
 ## 更多教程
 http://dingxiaowei.cn/tags/设计模式/

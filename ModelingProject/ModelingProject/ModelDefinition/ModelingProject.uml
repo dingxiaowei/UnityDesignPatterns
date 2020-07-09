@@ -26,6 +26,18 @@
       Id="1dbccd03-a662-4e7e-a661-c76c3e3b4b9c">
       <body>原型类，实现一个克隆自己的操作</body>
     </comment>
+    <comment
+      Id="c8d84a72-1b99-4df8-8f18-95edbb30d2ad">
+      <body>Subject接口定义了RealSubject和Proxy的公用接口，这样在任何需要访问RealSubject的地方都可以使用Proxy</body>
+    </comment>
+    <comment
+      Id="8f84f319-50f1-461e-b52b-d7cfb875241b">
+      <body>Proxy类，保存一个应用使得代理可以访问实体</body>
+    </comment>
+    <comment
+      Id="e575cd57-5587-4fc5-b29f-3d0b430bb9dc">
+      <body>Subject的真实实体</body>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -1704,6 +1716,105 @@
           </association>
         </targetEnds>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d5091c42-466f-4e06-88ff-d716a21342c7"
+        name="Client"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="d7c16cf6-e801-4f4a-bd97-4eb3c6a7b5d3">
+            <interfaceMoniker
+              Id="ef39d4c5-658d-4462-b969-b68b569deb5d"
+              LastKnownName="Subject"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eadbb2c8-cce7-4eaa-a4d8-e0aec50a8540"
+        name="Proxy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="c15bdb80-ff5b-43e4-810b-bc5131032123">
+            <interfaceMoniker
+              Id="ef39d4c5-658d-4462-b969-b68b569deb5d"
+              LastKnownName="Subject"
+              LastKnownLocation="ModelingProject.uml" />
+          </interfaceRealization>
+          <dependency
+            Id="77f46af2-3265-4d9b-b723-08fa901e8275">
+            <classMoniker
+              Id="cec6adab-710e-4d16-82d0-591db6866a19"
+              LastKnownName="RealSubject"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e2fa1fc4-0195-4d35-9ce9-7fb74124bf37"
+            name="Request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cec6adab-710e-4d16-82d0-591db6866a19"
+        name="RealSubject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="0d3d3404-8d75-4877-b335-3a736165c1ee">
+            <interfaceMoniker
+              Id="ef39d4c5-658d-4462-b969-b68b569deb5d"
+              LastKnownName="Subject"
+              LastKnownLocation="ModelingProject.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="756f6a2d-6c44-4ca5-9d15-8451cacdbc52"
+            name="Request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ef39d4c5-658d-4462-b969-b68b569deb5d"
+        name="Subject"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="18e1017e-1727-4456-a5f5-947b744a1aca"
+            name="Request"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

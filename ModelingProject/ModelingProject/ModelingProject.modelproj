@@ -55,6 +55,13 @@
       <SubType>Content</SubType>
       <DependentUpon>PropertyDesignPatternUML.classdiagram</DependentUpon>
     </Content>
+    <Content Include="ProxyDesignPatternUML.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ProxyDesignPatternUML.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ProxyDesignPatternUML.classdiagram</DependentUpon>
+    </Content>
     <Content Include="SimpleFactoryDesignPatternUML.classdiagram">
       <SubType>Content</SubType>
     </Content>
