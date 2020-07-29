@@ -1816,6 +1816,190 @@
         </ownedOperations>
       </Interface>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="04c4bb8f-a13d-4629-9217-83d71bcedbd5"
+        name="Client"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="5b8bbe95-26d1-4df0-88d3-b49b63dc0bfd">
+            <classMoniker
+              Id="248daf7b-c2fb-462b-b6c2-a0b8e37c27dc"
+              LastKnownName="Abstraction"
+              LastKnownLocation="ModelingProject.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="248daf7b-c2fb-462b-b6c2-a0b8e37c27dc"
+        name="Abstraction"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="df49bb55-d357-4c0f-a16c-4a4f03362aed"
+            isDerived="false"
+            sourceEndRoleName="Abstraction"
+            targetEndRoleName="Implementor"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4bc38277-70ce-48b2-9dba-fe89338f2009"
+              LastKnownName="Implementor"
+              LastKnownLocation="ModelingProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2c2befb-4c8f-4653-b9a5-d441aa3baea3"
+                  name="Abstraction"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d9289774-ae24-44ad-9046-f2eb21dd4fd3"
+                  name="Implementor"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="7ab06cd4-0762-48b5-bcd2-e63f8f503c06"
+            name="Operation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a4570c0b-b2cd-421b-8ec9-2722d461bea7"
+        name="RefinedAbstraction"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f6811784-93f8-47ed-9f64-fcf4dc5decaa"
+            isSubstitutable="false">
+            <classMoniker
+              Id="248daf7b-c2fb-462b-b6c2-a0b8e37c27dc"
+              LastKnownName="Abstraction"
+              LastKnownLocation="ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f52aee5e-de2a-4696-b906-2b128dfd9439"
+            name="Operation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4bc38277-70ce-48b2-9dba-fe89338f2009"
+        name="Implementor"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="d7633319-924d-40ad-841c-5850a75ec5eb"
+            name="OperationImpl"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e5091f92-0921-4385-900c-eb751f62e63a"
+        name="ConcreteImplementorA"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="ad013e68-8e14-4c0b-9b55-1bd241d554bc"
+            isSubstitutable="false">
+            <classMoniker
+              Id="4bc38277-70ce-48b2-9dba-fe89338f2009"
+              LastKnownName="Implementor"
+              LastKnownLocation="ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="eee33f32-07d8-4a78-96ca-1571bbed3622"
+            name="OperationImpl"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3eae8b21-7c50-44ee-8cd5-0cdc08920f80"
+        name="ConcreteImplementorB"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="4dd2e197-685d-4ec3-9464-bfb09d0e7d56"
+            isSubstitutable="false">
+            <classMoniker
+              Id="4bc38277-70ce-48b2-9dba-fe89338f2009"
+              LastKnownName="Implementor"
+              LastKnownLocation="ModelingProject.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a30b9cc1-24e8-4a75-8722-ee339c288178"
+            name="OperationImpl"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
