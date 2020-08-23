@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="086a8c39-8fee-4bf4-aa59-babfbcbdfb39" name="FacadeDesignPatternUML" linkedPackageId="fa07b1f2-cc79-4da5-bea4-e8d90d4d210a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="527697b5-f66d-4293-bf6e-1341bff7209c">
+      <profileInstance Id="d035d24b-6181-4ad4-a340-b6287c337660" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="85e5998c-2c41-43f9-a5ce-544359e8de1a">
+      <profileInstance Id="ba4e6546-15df-4955-9e75-af0a44e762dd" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f84cccf7-d6cc-4518-8491-0598084ef6c5" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dc1fe116-ccc8-4150-94f9-d52fe58d6af0" />
+        <suppliersInternal>
+          <dependency Id="a4172e7f-6c6c-4652-9daf-56c60db579bd">
+            <classMoniker Id="a4466f07-0911-4431-852c-fe5f070bc5db" LastKnownName="Facade" />
+            <elementDefinition Id="754d3193-c69a-417e-b893-860568541917" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a4466f07-0911-4431-852c-fe5f070bc5db" name="Facade" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ada05443-f3e9-4ca3-a5e2-55ed003b8f89" />
+        <targetEnds>
+          <association Id="8b8ac97f-c878-4795-b794-57c8c95b93ce" isDerived="false" sourceEndRoleName="Facade" targetEndRoleName="子模块1" isLeaf="false" isAbstract="false">
+            <classMoniker Id="75d1ec5e-f013-430c-bda6-eb606044858e" LastKnownName="子模块1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3bb24a68-4663-483a-819e-f79da209f108" name="Facade" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1b038880-adb4-4d70-942a-af10467de718" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92009562-fa72-417e-bac6-0f0ef7bc1dfa" name="子模块1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="039ba599-dc78-4d19-81c5-bc438f622215" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ee5fd215-b8bc-45cb-9250-fd7ba34a32f8" />
+          </association>
+          <association Id="8d37c18e-38e5-4906-8f7c-b97eacc7cd4b" isDerived="false" sourceEndRoleName="Facade" targetEndRoleName="子模块2" isLeaf="false" isAbstract="false">
+            <classMoniker Id="10d7eda2-6881-4f3b-8686-af2a41e9678f" LastKnownName="子模块2" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c2738873-e25a-4701-a2d3-6a60845934a1" name="Facade" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="32369d7b-c4cf-4914-9bca-a1c1354e09f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d47ec2ce-2744-4460-819f-4afb8d53f54c" name="子模块2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="11cc4e47-b84f-44d9-a5b2-e717208dfe93" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9e5d98bc-1272-46fe-b49f-53d9241cc418" />
+          </association>
+          <association Id="a569f1bb-9421-4577-95a8-cb21793bdebf" isDerived="false" sourceEndRoleName="Facade" targetEndRoleName="子模块3" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0aef3dbd-c4bd-4b61-9017-6b74fa1d87e6" LastKnownName="子模块3" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c1ada473-9359-474c-ae25-6b2cfcdb3041" name="Facade" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d3da698e-6791-4b4d-ac4d-dc5a62f2ce2d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8ffc98aa-f6a3-4435-86f1-05e56ccf824a" name="子模块3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9a21d69c-61e2-48e2-a68d-14fe6bd888dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d418c0bf-2804-44af-9ff5-dd91d027eed4" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="75d1ec5e-f013-430c-bda6-eb606044858e" name="子模块1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b86bb3e5-9c11-4533-8a1e-8591f5726118" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="10d7eda2-6881-4f3b-8686-af2a41e9678f" name="子模块2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ed418f44-9da1-4f8c-9693-9589add91929" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0aef3dbd-c4bd-4b61-9017-6b74fa1d87e6" name="子模块3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d55a3efe-33b7-46fb-8aec-e83a51cc6dac" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="fa07b1f2-cc79-4da5-bea4-e8d90d4d210a" name="ModelingProject">
+    <elementDefinition Id="c6e0487e-98d0-4904-b090-ba82f19c814a" />
+  </package>
+</logicalClassDesignerModel>
