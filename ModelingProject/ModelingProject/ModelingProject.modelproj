@@ -36,6 +36,13 @@
       <SubType>Content</SubType>
       <DependentUpon>BuilderPatternUML.classdiagram</DependentUpon>
     </Content>
+    <Content Include="CompositeDesignPatternUML.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CompositeDesignPatternUML.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CompositeDesignPatternUML.classdiagram</DependentUpon>
+    </Content>
     <Content Include="FacadeDesignPatternUML.classdiagram">
       <SubType>Content</SubType>
     </Content>
