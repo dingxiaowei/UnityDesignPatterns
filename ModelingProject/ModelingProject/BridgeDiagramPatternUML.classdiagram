@@ -112,6 +112,131 @@
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c6ef5e2b-9ba4-4880-b61e-1b4108165053" name="ISoldier" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="82ca583d-c8bf-4195-a1c8-03b9755b5460" />
+        <targetEnds>
+          <association Id="cdc769b1-cc60-4c8f-9a60-052aba832752" isDerived="false" sourceEndRoleName="ISoldier" targetEndRoleName="WeaponGun" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3c7928a1-7642-4045-9e24-51431c84f1f9" LastKnownName="WeaponGun" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb8672ea-98e5-4144-a138-859668b3bd58" name="ISoldier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e05b53c7-3bed-4069-9b99-d88da0a82248" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1d90882c-125a-4f54-bbcb-6d49ad6e6cb2" name="WeaponGun" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f3932ca6-fb74-4a70-8958-e9aeddecfa80" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="22ae56d5-1dd5-4aae-8738-edc959b0c979" />
+          </association>
+          <association Id="a9f8bf50-d8ca-4d4c-ba3e-152bf9397691" isDerived="false" sourceEndRoleName="ISoldier" targetEndRoleName="WeaponRifle" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3561de7c-afdc-48b2-b101-4fac362db942" LastKnownName="WeaponRifle" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="45dc9dae-7585-4a9f-8b88-9053b3c82e0e" name="ISoldier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8522d6b9-a289-41d7-8db2-03eec44f8467" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75999861-d403-4d82-9fbe-70650bef48a3" name="WeaponRifle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7dbf0ce9-df0c-4b92-a529-eb27908b348c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="39b48f46-1380-4b40-a989-722dcf84abb1" />
+          </association>
+          <association Id="5f0096cb-7f98-46c4-8bca-54ee66923b41" isDerived="false" sourceEndRoleName="ISoldier" targetEndRoleName="WeaponRocket" isLeaf="false" isAbstract="false">
+            <classMoniker Id="806e4419-5bcb-45ae-b387-9c7504465ca0" LastKnownName="WeaponRocket" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="484a57f8-8f43-45b6-b1f4-58df51f36e1b" name="ISoldier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4efd65d7-9483-4573-bc48-dda3085dbeb9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8c5689d-4d92-467e-bc64-5580e466582d" name="WeaponRocket" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1f810788-b404-48bf-8629-473773f5b590" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2a50cf82-0642-4084-8c64-57191d3ca51a" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8c52f9ba-5c3e-4c2d-867d-1852bfebba26" name="IEnemy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b85a07e-b295-4ee3-b4fc-0957e6aa5cdb" />
+        <targetEnds>
+          <association Id="69817115-3dc5-4752-a862-6bf233131885" isDerived="false" sourceEndRoleName="IEnemy" targetEndRoleName="WeaponGun" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3c7928a1-7642-4045-9e24-51431c84f1f9" LastKnownName="WeaponGun" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="db942455-8384-4fe4-8eb7-7dab97380056" name="IEnemy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="42246da6-f8dd-457d-a1fa-ffb7986b1af8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d84082ad-2f07-4c73-b2c6-8baedd0e6768" name="WeaponGun" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1cdfef91-1108-404d-814c-7af955d33d16" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="42679eb6-0c83-43c7-b1c0-c95bd1e33a36" />
+          </association>
+          <association Id="bc1ec045-c0e1-430f-90a0-651d3367f168" isDerived="false" sourceEndRoleName="IEnemy" targetEndRoleName="WeaponRifle" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3561de7c-afdc-48b2-b101-4fac362db942" LastKnownName="WeaponRifle" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a032dada-5b95-4b8e-af09-2a28d9b34fb7" name="IEnemy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="76b60821-5bb9-4565-8ca0-18926a309871" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3c071918-8057-455f-813d-296c177e5cab" name="WeaponRifle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="76b1ad9b-c66e-4e9d-a045-5f8b7ba322e5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3c581e10-b24e-4f33-8c0d-438f06985cf5" />
+          </association>
+          <association Id="93f88fe9-d1b8-4341-a952-bfbab0bc2c3a" isDerived="false" sourceEndRoleName="IEnemy" targetEndRoleName="WeaponRocket" isLeaf="false" isAbstract="false">
+            <classMoniker Id="806e4419-5bcb-45ae-b387-9c7504465ca0" LastKnownName="WeaponRocket" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b911bea6-79b7-4b48-91f6-db7046bd8bc0" name="IEnemy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b4bbfded-1a2a-40a9-b4e0-f7edb3a8a474" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="53018a3e-a332-42c0-bf67-5ec6272c340b" name="WeaponRocket" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="759349b2-e89f-4ecd-b468-6361bfb47322" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="95c062a6-ace1-4909-a1bc-7374e23bc7bb" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3c7928a1-7642-4045-9e24-51431c84f1f9" name="WeaponGun" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9002fbdd-c2e8-4f4e-9d08-8a8e01138501" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3561de7c-afdc-48b2-b101-4fac362db942" name="WeaponRifle" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4a3a101a-2ed8-46ac-a22a-cab84953db10" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="806e4419-5bcb-45ae-b387-9c7504465ca0" name="WeaponRocket" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="848493bc-aa85-4cfc-bca5-d53e6ba3fea6" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="9bb1e8bc-9c71-4ef6-a8b1-5ecf9aedd8cd" name="ModelingProject">
     <elementDefinition Id="c6e0487e-98d0-4904-b090-ba82f19c814a" />
