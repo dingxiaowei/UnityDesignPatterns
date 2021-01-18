@@ -76,6 +76,13 @@
     <Content Include="ModelDefinition\Package_2136.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ObserverDesignPatternUML.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ObserverDesignPatternUML.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ObserverDesignPatternUML.classdiagram</DependentUpon>
+    </Content>
     <Content Include="PropertyDesignPatternUML.classdiagram">
       <SubType>Content</SubType>
     </Content>

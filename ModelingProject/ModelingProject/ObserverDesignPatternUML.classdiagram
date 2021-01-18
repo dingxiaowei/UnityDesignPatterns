@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="8e76d9cb-6f50-4906-9116-f8d791cd5966" name="ObserverDesignPatternUML" linkedPackageId="4b9c3026-06ec-43b4-b681-fca62c8799d8" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="2a69d2e6-121c-47bf-aa5f-6db244d8d9a4">
+      <elementDefinition Id="9023905b-4444-484f-afc4-93a1a0046e71" />
+      <body>观察者基类</body>
+    </comment>
+    <comment Id="ddd78d32-f345-4186-a818-521bfd849344">
+      <elementDefinition Id="2aa2d9af-2578-4e16-977b-f957525568be" />
+      <body>被观察者(发布者)</body>
+    </comment>
+    <comment Id="821c6b69-22b6-40b8-9834-396048a281fb">
+      <elementDefinition Id="bd9e81d1-d576-49bc-b4f8-ada5b21665a2" />
+      <body>当Subject属性发生变化时，要通知所有观察者，调用NotifyAllObservers方法，方法内部遍历所有子类的Update</body>
+    </comment>
+    <comment Id="d8f379d6-f3f8-40c4-acf6-d86919d29eb8">
+      <elementDefinition Id="a1298588-e71f-4896-ae02-99310c9df57d" />
+      <body>事件/订阅模式</body>
+    </comment>
+    <comment Id="9aa8f6bc-838b-4387-ba43-6a7350b7269b">
+      <elementDefinition Id="810a34e6-13fa-459e-b24e-e4b050e45069" />
+      <body>订阅者通过EventManager注册和反注册事件</body>
+    </comment>
+    <comment Id="1ca4e745-9c87-4560-84dc-f5cdb3e591ec">
+      <elementDefinition Id="77bb980f-1ffc-47f4-b29c-f91234210ed2" />
+      <body>通过Publish发送消息</body>
+    </comment>
+    <comment Id="d69e06f2-e797-4541-879a-203235a27376">
+      <elementDefinition Id="c2c14a70-de2b-47af-9e99-07d4bc7be232" />
+      <body>观察者模式</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="2572a2b3-fa75-4737-a457-0e48e5a7d1cb">
+      <profileInstance Id="6722a3b1-d01f-48f9-a835-40b08dd1dffa" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="496b6776-9655-4c1c-879e-f269e124593a">
+      <profileInstance Id="62b31958-1401-4b6b-bfe5-b542e43d397e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="37cf9554-bee7-40d4-b029-176b3c5c809a" name="ObserverBase" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b7d5a8d8-1644-4b8f-adb8-c067d4e9570d" />
+        <ownedOperationsInternal>
+          <operation Id="e4d965fa-ffde-4dac-a41f-33aad1dc7a1a" name="Update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b15c157c-5233-4de7-829a-c9cf4d5a0103" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f6af58e9-8975-4516-8896-3267e6a18de6" name="ObserverOne" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="97070f60-70b1-4b85-92a7-1a7bf91c73d5" />
+        <generalsInternal>
+          <generalization Id="7fd84dbd-b073-40c0-ba36-80800f7e7420" isSubstitutable="false">
+            <classMoniker Id="37cf9554-bee7-40d4-b029-176b3c5c809a" LastKnownName="ObserverBase" />
+            <elementDefinition Id="0e449b1d-8618-4e7f-8d00-f468c128c940" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="137a2de9-f6e2-40e9-9cc1-899143d545dd" name="Update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c866fbb6-3dde-466e-bc16-8121626d1a19" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7dd8df9d-2bae-4a10-af35-0fd52318d021" name="ObserverTwo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a037b6e5-f7c6-4301-ae6d-f7cb1419e159" />
+        <generalsInternal>
+          <generalization Id="3ad6d1d8-1c0f-41d0-bfab-0b332061bfd3" isSubstitutable="false">
+            <classMoniker Id="37cf9554-bee7-40d4-b029-176b3c5c809a" LastKnownName="ObserverBase" />
+            <elementDefinition Id="f51055c8-0996-46cf-888b-fa1f7e0beb05" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="ba0c8861-c3cf-4508-87db-7070f96d897f" name="Update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b872ad50-a4f4-4c79-a64b-6a4279fce13b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ccc2ea71-8d8a-4688-9207-5c1db3efac53" name="ObserverThree" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cc3b15ce-7d9b-4a09-80ce-8b3ab8d60d5f" />
+        <generalsInternal>
+          <generalization Id="f44f19db-8e8d-44b2-97da-e654af8f89e2" isSubstitutable="false">
+            <classMoniker Id="37cf9554-bee7-40d4-b029-176b3c5c809a" LastKnownName="ObserverBase" />
+            <elementDefinition Id="e80bf039-12e8-45ab-84b5-5c81562365f0" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="f12e6742-6321-4505-a3bf-ca86925ae4c8" name="Update" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="17fa2b54-505a-45bc-815c-8a06d3ce2457" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d61ed4f9-1bdf-4065-8efe-d94663d5e842" name="Subject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ea882d9f-e17e-4db9-8e8e-16665e009c83" />
+        <suppliersInternal>
+          <dependency Id="78504538-a9c7-4fc7-b3a4-5d465a49e91d">
+            <classMoniker Id="37cf9554-bee7-40d4-b029-176b3c5c809a" LastKnownName="ObserverBase" />
+            <elementDefinition Id="fc2dfd61-45e2-4cbe-9ede-89af5ad118d0" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="25fdb4da-0dbc-47c1-8736-c8e6f6e5cb0f" name="observers" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a23203a8-1e9c-4120-a78d-7eb120fb77a2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c221dd1f-7fc2-4695-a7a8-783d0da1dc0f" LastKnownName="List&lt;ObserverBase&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7462d5f3-3082-4aa4-9f28-ce28f0bcb40a" name="NotifyAllObservers" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a817ec36-048f-4a99-8bd9-c2f6b311dacb" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c221dd1f-7fc2-4695-a7a8-783d0da1dc0f" name="List&lt;ObserverBase&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;ObserverBase&gt;">
+        <elementDefinition Id="733d495a-8d68-4b24-97c2-f190ec23b306" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c0db96eb-31da-44b1-9fe6-eef26dcbfc7d" name="EventManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6c0b3820-e9d5-4538-8149-316485d91639" />
+        <ownedAttributesInternal>
+          <property Id="1598cb8b-1c09-49a6-8f74-4f2e96aa0c15" name="Dictionary&lt;Type, List&lt;object&gt;&gt; handlers" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b5c1852f-07a7-49ef-b569-4731298a2d31" />
+            <defaultValue>
+              <literalString Id="07ea0831-ee5c-471f-befc-c4390fad3075" name="DefaultValue" value="new Dictionary&lt;Type, List&lt;object&gt;&gt;();">
+                <elementDefinition Id="57b64a3f-bc64-425c-af9d-594957306ffc" />
+              </literalString>
+            </defaultValue>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5693886c-a35e-4e05-934e-614436fbc7df" name="Register&lt;T&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="597576b6-0535-446e-b2ca-6a4ac5bc9294" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a683524a-c0c2-4400-994a-7bc613b68d03" name="Type EventType" direction="In" isUnique="false">
+                  <elementDefinition Id="1f7fcbb0-57e3-4a8d-9fbe-5b938eb11645" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3fca717c-9829-49ce-ae60-c9684f21e4d0" name="EventHandler&lt;T&gt; handler" direction="In" isUnique="false">
+                  <elementDefinition Id="5f5da473-134b-4135-a66f-6ee45a366b45" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="474aabbb-2fba-4f6c-9a4b-474a6b857ca3" name="UnRegister&lt;T&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a9bd5fba-33f4-4fd3-a95f-ddcfb0ed35cd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="494dcb14-d459-453a-8a90-7d222266c446" name="Type EventType" direction="In" isUnique="false">
+                  <elementDefinition Id="2a488519-d24b-4728-a6eb-99ad0ca429ac" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c46705a1-1eaa-4182-a97d-16285187a26a" name="EventHandler&lt;T&gt; handler)(" direction="In" isUnique="false">
+                  <elementDefinition Id="b814d52f-6d57-4613-a243-d2af7f89313d" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="373afae7-09af-4e78-bfc8-e51a5ac7374c" name="Publish&lt;T&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="932bbdc0-52e1-4939-a963-4387593f6c8c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="275f9ddb-d866-41a2-b521-5c69aa48ff19" name="object sender" direction="In" isUnique="false">
+                  <elementDefinition Id="cc2bd71e-c7ad-42a5-94da-707707119809" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8596897a-08b7-4b9e-b44b-f1644da12a83" name="Type eventType" direction="In" isUnique="false">
+                  <elementDefinition Id="b19eabe0-b53e-494f-908d-6af963ef0afd" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a9145ad8-4407-45e1-904e-95e9871fadab" name="T eve" direction="In" isUnique="false">
+                  <elementDefinition Id="18c37e63-66d8-42e4-87b3-0a1fd1d9a998" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="87d0963c-bb32-47d6-b149-06a4303135f7" name="Subject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5edac10f-4275-4dbc-9a87-a3a5bf2c45b7" />
+        <suppliersInternal>
+          <dependency Id="2d59fde7-e1af-4c00-a41d-24240a7b45fe">
+            <classMoniker Id="c0db96eb-31da-44b1-9fe6-eef26dcbfc7d" LastKnownName="EventManager" />
+            <elementDefinition Id="6b77f393-bf00-477a-b179-2c57e973300d" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="631ad491-427b-4608-911a-32e3868e0d51" name="ObserverOne1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="05b1ebb3-a733-4d03-9d67-38169ee89d3a" />
+        <suppliersInternal>
+          <dependency Id="d89a4fba-5f5a-4cf7-bde9-adf8303435d1">
+            <classMoniker Id="c0db96eb-31da-44b1-9fe6-eef26dcbfc7d" LastKnownName="EventManager" />
+            <elementDefinition Id="7b77a0c8-1bda-4b4c-bddc-ed968b0b5a5e" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1216f33b-a5da-4c26-abf6-0ca5f670cbab" name="ObserverOne11" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c2ea15e3-78fc-411a-b1f5-075e514b86d2" />
+        <suppliersInternal>
+          <dependency Id="5cd88959-310a-40de-9005-eb7fff2d3c93">
+            <classMoniker Id="c0db96eb-31da-44b1-9fe6-eef26dcbfc7d" LastKnownName="EventManager" />
+            <elementDefinition Id="171dd51f-a2f0-4ac8-8ec6-0dd3eaecde1d" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f9e6086c-7828-4617-bd94-ba27c7caac55" name="ObserverOne111" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="aa3a219e-e119-4109-ae55-2b0764fcc671" />
+        <suppliersInternal>
+          <dependency Id="d7ab2d77-176a-4901-9428-0ff63399e6bd">
+            <classMoniker Id="c0db96eb-31da-44b1-9fe6-eef26dcbfc7d" LastKnownName="EventManager" />
+            <elementDefinition Id="ebc012fc-a1b5-479f-862a-cfb2fb9dda8e" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="4b9c3026-06ec-43b4-b681-fca62c8799d8" name="ModelingProject">
+    <elementDefinition Id="c6e0487e-98d0-4904-b090-ba82f19c814a" />
+  </package>
+</logicalClassDesignerModel>
